@@ -8,11 +8,6 @@
 import os
 import agent
 
-firewall = os.getenv("FIREBIRD_FIREWALL") == "True"
-
-if firewall:
-  agent.remove_public_service(os.environ['MODULE_ID'])
-else:
-  agent.add_public_service(os.environ['MODULE_ID'], [
+agent.add_public_service(os.environ['MODULE_ID'], [
     os.environ['FIREBIRD_PORT']+"/tcp", # Firebird port
-  ], replace_ports=True)
+], replace_ports=True)

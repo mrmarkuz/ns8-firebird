@@ -15,7 +15,6 @@
         "charset",
         "port",
         "tz",
-        "ff"
     ],
     "properties": {
         "charset": {
@@ -31,11 +30,6 @@
             "type": "string",
             "title": "Firebird timezone",
             "description": "The timezone used by Firebird"
-        },
-	"ff": {
-            "type": "string",
-            "title": "Firebird firewall",
-            "description": "Open/Close Firewall port what used by Firebird"
         }
     }
 }

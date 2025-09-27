@@ -21,7 +21,6 @@ config = {}
 # Read current configuration from the environment file
 config["charset"] = os.getenv("FIREBIRD_DATABASE_DEFAULT_CHARSET","")
 config["port"] = os.getenv("FIREBIRD_PORT","")
-config["ff"] = os.getenv("FIREBIRD_FIREWALL","") == "True";
 config["tz"] = os.getenv("FIREBIRD_TIMEZONE","")
 
 # Dump the configuration to stdout

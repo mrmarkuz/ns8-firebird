@@ -30,7 +30,6 @@ ExecStart=/usr/bin/podman run --conmon-pidfile %t/firebird-app.pid \
 #    --env FIREBIRD_DATABASE=mirror.fdb \
     --env FIREBIRD_DATABASE_DEFAULT_CHARSET=${FIREBIRD_DATABASE_DEFAULT_CHARSET} \
     --env TZ=${FIREBIRD_TIMEZONE} \
-    --env FF=${FIREBIRD_FIREWALL} \
     --volume firebird-data:/var/lib/firebird/data:z \
     --volume firebird-config:/opt/firebird:z \
     ${FIREBIRD_IMAGE}
